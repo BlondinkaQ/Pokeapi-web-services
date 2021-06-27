@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h1 class="mb-3"> hi {{user}} !</h1>
+<h1>Cписок покемонів:</h1>
+
+{% for list in list_user %}
+<ul>
+    <li><strong>{{list}}</strong></li>
+</ul>
+{% endfor %}
+
+{% endblock %}
